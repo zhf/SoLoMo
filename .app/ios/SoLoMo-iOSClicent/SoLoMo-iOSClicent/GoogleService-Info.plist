@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>966359661848-fq27td3mkg7rtr54rb46i58k3ss7uls2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.966359661848-fq27td3mkg7rtr54rb46i58k3ss7uls2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDZahBYbE67EbY7Rk7_Mx4HqDlkoGcBrCY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>966359661848</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.starcode.SoLoMo-iOSClicent</string>
+	<key>PROJECT_ID</key>
+	<string>solomo-843ed</string>
+	<key>STORAGE_BUCKET</key>
+	<string>solomo-843ed.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:966359661848:ios:5e5280a5e3e4b73e</string>
+	<key>DATABASE_URL</key>
+	<string>https://solomo-843ed.firebaseio.com</string>
+</dict>
+</plist>

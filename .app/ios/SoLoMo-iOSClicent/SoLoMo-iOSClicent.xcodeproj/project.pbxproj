@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		174F2D2E13FAD7B13508A892 /* libPods-SoLoMo-iOSClicent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B89AC8E902A144FFC355029D /* libPods-SoLoMo-iOSClicent.a */; };
+		834FE9691DC48E05009CA9DE /* LoginWithGitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834FE9681DC48E05009CA9DE /* LoginWithGitHubViewController.m */; };
+		838AE7311DC4AD61001D4A6C /* AccountHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE7291DC4AD61001D4A6C /* AccountHelper.m */; };
+		838AE7321DC4AD61001D4A6C /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE72B1DC4AD61001D4A6C /* AccountManager.m */; };
+		838AE7341DC4AD61001D4A6C /* DatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE72E1DC4AD61001D4A6C /* DatabaseHelper.m */; };
+		838AE7351DC4AD61001D4A6C /* SharedDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE7301DC4AD61001D4A6C /* SharedDatabaseHelper.m */; };
+		8393AE401DC4AC7200D6ACE5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8393AE3F1DC4AC7200D6ACE5 /* User.m */; };
+		83BC17881DC4AED6001468DC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17871DC4AED6001468DC /* Config.m */; };
+		83BC178B1DC4B745001468DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83BC178A1DC4B745001468DC /* GoogleService-Info.plist */; };
+		83BC17911DC4BFCE001468DC /* ChatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17901DC4BFCE001468DC /* ChatsViewController.m */; };
+		83BC17941DC4C01C001468DC /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17931DC4C01C001468DC /* GroupsViewController.m */; };
+		83BC17971DC4C183001468DC /* GaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17961DC4C183001468DC /* GaysViewController.m */; };
+		83F0D2C61DC4758F0046276C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F0D2C51DC4758F0046276C /* main.m */; };
+		83F0D2D11DC4758F0046276C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F0D2D01DC4758F0046276C /* Assets.xcassets */; };
+		83F0D2E01DC480A30046276C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F0D2DD1DC480A30046276C /* BaseNavigationController.m */; };
+		83F0D2E11DC480A30046276C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F0D2DF1DC480A30046276C /* BaseViewController.m */; };
+		83F0D2E81DC480FF0046276C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F0D2E41DC480FF0046276C /* AppDelegate.m */; };
+		83F0D2EF1DC481AB0046276C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F0D2EE1DC481AB0046276C /* ProfileViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0325CEB23EF92D6686D42DD5 /* Pods-SoLoMo-iOSClicent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoLoMo-iOSClicent.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoLoMo-iOSClicent/Pods-SoLoMo-iOSClicent.release.xcconfig"; sourceTree = "<group>"; };
+		43825793CF8DD11FF0AB89FC /* Pods-SoLoMo-iOSClicent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoLoMo-iOSClicent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoLoMo-iOSClicent/Pods-SoLoMo-iOSClicent.debug.xcconfig"; sourceTree = "<group>"; };
+		834FE9671DC48E05009CA9DE /* LoginWithGitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWithGitHubViewController.h; sourceTree = "<group>"; };
+		834FE9681DC48E05009CA9DE /* LoginWithGitHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWithGitHubViewController.m; sourceTree = "<group>"; };
+		838AE7281DC4AD61001D4A6C /* AccountHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountHelper.h; sourceTree = "<group>"; };
+		838AE7291DC4AD61001D4A6C /* AccountHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountHelper.m; sourceTree = "<group>"; };
+		838AE72A1DC4AD61001D4A6C /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		838AE72B1DC4AD61001D4A6C /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		838AE72D1DC4AD61001D4A6C /* DatabaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseHelper.h; sourceTree = "<group>"; };
+		838AE72E1DC4AD61001D4A6C /* DatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseHelper.m; sourceTree = "<group>"; };
+		838AE72F1DC4AD61001D4A6C /* SharedDatabaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDatabaseHelper.h; sourceTree = "<group>"; };
+		838AE7301DC4AD61001D4A6C /* SharedDatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDatabaseHelper.m; sourceTree = "<group>"; };
+		8393AE3E1DC4AC7200D6ACE5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8393AE3F1DC4AC7200D6ACE5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		83BC17861DC4AED6001468DC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		83BC17871DC4AED6001468DC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		83BC17891DC4B169001468DC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		83BC178A1DC4B745001468DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83BC178F1DC4BFCE001468DC /* ChatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsViewController.h; sourceTree = "<group>"; };
+		83BC17901DC4BFCE001468DC /* ChatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsViewController.m; sourceTree = "<group>"; };
+		83BC17921DC4C01C001468DC /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsViewController.h; sourceTree = "<group>"; };
+		83BC17931DC4C01C001468DC /* GroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsViewController.m; sourceTree = "<group>"; };
+		83BC17951DC4C183001468DC /* GaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaysViewController.h; sourceTree = "<group>"; };
+		83BC17961DC4C183001468DC /* GaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaysViewController.m; sourceTree = "<group>"; };
+		83F0D2C11DC4758F0046276C /* SoLoMo-iOSClicent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoLoMo-iOSClicent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F0D2C51DC4758F0046276C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83F0D2D01DC4758F0046276C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83F0D2D51DC4758F0046276C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F0D2DC1DC480A30046276C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		83F0D2DD1DC480A30046276C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		83F0D2DE1DC480A30046276C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		83F0D2DF1DC480A30046276C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		83F0D2E31DC480FF0046276C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83F0D2E41DC480FF0046276C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83F0D2ED1DC481AB0046276C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		83F0D2EE1DC481AB0046276C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		83F0D2F11DC4828A0046276C /* UIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConfig.h; sourceTree = "<group>"; };
+		B89AC8E902A144FFC355029D /* libPods-SoLoMo-iOSClicent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoLoMo-iOSClicent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83F0D2BE1DC4758F0046276C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174F2D2E13FAD7B13508A892 /* libPods-SoLoMo-iOSClicent.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		151DF3357ACE7A2E44A33956 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43825793CF8DD11FF0AB89FC /* Pods-SoLoMo-iOSClicent.debug.xcconfig */,
+				0325CEB23EF92D6686D42DD5 /* Pods-SoLoMo-iOSClicent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8393AE3D1DC4AC5700D6ACE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8393AE3E1DC4AC7200D6ACE5 /* User.h */,
+				8393AE3F1DC4AC7200D6ACE5 /* User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83F0D2B81DC4758F0046276C = {
+			isa = PBXGroup;
+			children = (
+				83F0D2C31DC4758F0046276C /* SoLoMo-iOSClicent */,
+				83F0D2C21DC4758F0046276C /* Products */,
+				151DF3357ACE7A2E44A33956 /* Pods */,
+				E7BAE26F5AE34534BF3D73B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83F0D2C21DC4758F0046276C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D2C11DC4758F0046276C /* SoLoMo-iOSClicent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F0D2C31DC4758F0046276C /* SoLoMo-iOSClicent */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D2E21DC480FF0046276C /* AppDelegate */,
+				83F0D2F01DC4828A0046276C /* Configration */,
+				83F0D2E51DC480FF0046276C /* Controller */,
+				8393AE3D1DC4AC5700D6ACE5 /* Model */,
+				83F0D2DB1DC480A30046276C /* BaseViewController */,
+				83F0D2D01DC4758F0046276C /* Assets.xcassets */,
+				83F0D2C41DC4758F0046276C /* Supporting Files */,
+			);
+			path = "SoLoMo-iOSClicent";
+			sourceTree = "<group>";
+		};
+		83F0D2C41DC4758F0046276C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83BC178A1DC4B745001468DC /* GoogleService-Info.plist */,
+				83F0D2D51DC4758F0046276C /* Info.plist */,
+				83F0D2C51DC4758F0046276C /* main.m */,
+				83BC17891DC4B169001468DC /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83F0D2DB1DC480A30046276C /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D2DC1DC480A30046276C /* BaseNavigationController.h */,
+				83F0D2DD1DC480A30046276C /* BaseNavigationController.m */,
+				83F0D2DE1DC480A30046276C /* BaseViewController.h */,
+				83F0D2DF1DC480A30046276C /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		83F0D2E21DC480FF0046276C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D2E31DC480FF0046276C /* AppDelegate.h */,
+				83F0D2E41DC480FF0046276C /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		83F0D2E51DC480FF0046276C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83BC178F1DC4BFCE001468DC /* ChatsViewController.h */,
+				83BC17901DC4BFCE001468DC /* ChatsViewController.m */,
+				83BC17921DC4C01C001468DC /* GroupsViewController.h */,
+				83BC17931DC4C01C001468DC /* GroupsViewController.m */,
+				83BC17951DC4C183001468DC /* GaysViewController.h */,
+				83BC17961DC4C183001468DC /* GaysViewController.m */,
+				83F0D2ED1DC481AB0046276C /* ProfileViewController.h */,
+				83F0D2EE1DC481AB0046276C /* ProfileViewController.m */,
+				834FE9671DC48E05009CA9DE /* LoginWithGitHubViewController.h */,
+				834FE9681DC48E05009CA9DE /* LoginWithGitHubViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83F0D2F01DC4828A0046276C /* Configration */ = {
+			isa = PBXGroup;
+			children = (
+				83F0D2F11DC4828A0046276C /* UIConfig.h */,
+				83BC17861DC4AED6001468DC /* Config.h */,
+				83BC17871DC4AED6001468DC /* Config.m */,
+				838AE7281DC4AD61001D4A6C /* AccountHelper.h */,
+				838AE7291DC4AD61001D4A6C /* AccountHelper.m */,
+				838AE72A1DC4AD61001D4A6C /* AccountManager.h */,
+				838AE72B1DC4AD61001D4A6C /* AccountManager.m */,
+				838AE72D1DC4AD61001D4A6C /* DatabaseHelper.h */,
+				838AE72E1DC4AD61001D4A6C /* DatabaseHelper.m */,
+				838AE72F1DC4AD61001D4A6C /* SharedDatabaseHelper.h */,
+				838AE7301DC4AD61001D4A6C /* SharedDatabaseHelper.m */,
+			);
+			path = Configration;
+			sourceTree = "<group>";
+		};
+		E7BAE26F5AE34534BF3D73B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89AC8E902A144FFC355029D /* libPods-SoLoMo-iOSClicent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83F0D2C01DC4758F0046276C /* SoLoMo-iOSClicent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F0D2D81DC4758F0046276C /* Build configuration list for PBXNativeTarget "SoLoMo-iOSClicent" */;
+			buildPhases = (
+				DDA4ADA1D3A3704F2F8C3C40 /* [CP] Check Pods Manifest.lock */,
+				83F0D2BD1DC4758F0046276C /* Sources */,
+				83F0D2BE1DC4758F0046276C /* Frameworks */,
+				83F0D2BF1DC4758F0046276C /* Resources */,
+				4515E34A9B64B34A63EDB6D8 /* [CP] Embed Pods Frameworks */,
+				F5C1E3AB61630E688869B196 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoLoMo-iOSClicent";
+			productName = "SoLoMo-iOSClicent";
+			productReference = 83F0D2C11DC4758F0046276C /* SoLoMo-iOSClicent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83F0D2B91DC4758F0046276C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = StarCore;
+				TargetAttributes = {
+					83F0D2C01DC4758F0046276C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83F0D2BC1DC4758F0046276C /* Build configuration list for PBXProject "SoLoMo-iOSClicent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83F0D2B81DC4758F0046276C;
+			productRefGroup = 83F0D2C21DC4758F0046276C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83F0D2C01DC4758F0046276C /* SoLoMo-iOSClicent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83F0D2BF1DC4758F0046276C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F0D2D11DC4758F0046276C /* Assets.xcassets in Resources */,
+				83BC178B1DC4B745001468DC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4515E34A9B64B34A63EDB6D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoLoMo-iOSClicent/Pods-SoLoMo-iOSClicent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA4ADA1D3A3704F2F8C3C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C1E3AB61630E688869B196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoLoMo-iOSClicent/Pods-SoLoMo-iOSClicent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83F0D2BD1DC4758F0046276C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BC17941DC4C01C001468DC /* GroupsViewController.m in Sources */,
+				83F0D2E81DC480FF0046276C /* AppDelegate.m in Sources */,
+				834FE9691DC48E05009CA9DE /* LoginWithGitHubViewController.m in Sources */,
+				838AE7351DC4AD61001D4A6C /* SharedDatabaseHelper.m in Sources */,
+				83BC17911DC4BFCE001468DC /* ChatsViewController.m in Sources */,
+				838AE7341DC4AD61001D4A6C /* DatabaseHelper.m in Sources */,
+				8393AE401DC4AC7200D6ACE5 /* User.m in Sources */,
+				83F0D2E01DC480A30046276C /* BaseNavigationController.m in Sources */,
+				838AE7321DC4AD61001D4A6C /* AccountManager.m in Sources */,
+				83BC17881DC4AED6001468DC /* Config.m in Sources */,
+				83F0D2E11DC480A30046276C /* BaseViewController.m in Sources */,
+				83BC17971DC4C183001468DC /* GaysViewController.m in Sources */,
+				83F0D2EF1DC481AB0046276C /* ProfileViewController.m in Sources */,
+				838AE7311DC4AD61001D4A6C /* AccountHelper.m in Sources */,
+				83F0D2C61DC4758F0046276C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83F0D2D61DC4758F0046276C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83F0D2D71DC4758F0046276C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83F0D2D91DC4758F0046276C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43825793CF8DD11FF0AB89FC /* Pods-SoLoMo-iOSClicent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SoLoMo-iOSClicent/PrefixHeader.pch";
+				INFOPLIST_FILE = "SoLoMo-iOSClicent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.starcode.SoLoMo-iOSClicent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83F0D2DA1DC4758F0046276C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0325CEB23EF92D6686D42DD5 /* Pods-SoLoMo-iOSClicent.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SoLoMo-iOSClicent/PrefixHeader.pch";
+				INFOPLIST_FILE = "SoLoMo-iOSClicent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.starcode.SoLoMo-iOSClicent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83F0D2BC1DC4758F0046276C /* Build configuration list for PBXProject "SoLoMo-iOSClicent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F0D2D61DC4758F0046276C /* Debug */,
+				83F0D2D71DC4758F0046276C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F0D2D81DC4758F0046276C /* Build configuration list for PBXNativeTarget "SoLoMo-iOSClicent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F0D2D91DC4758F0046276C /* Debug */,
+				83F0D2DA1DC4758F0046276C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83F0D2B91DC4758F0046276C /* Project object */;
+}

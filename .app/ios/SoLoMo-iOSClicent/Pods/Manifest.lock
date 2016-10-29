@@ -1,0 +1,57 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GitHubOAuthController (0.2.3)
+  - InflectorKit (0.0.1)
+  - IQKeyboardManager (4.0.7)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - Meteor (0.2.1):
+    - InflectorKit
+    - PocketSocket
+    - SimpleKeychain
+  - PocketSocket (1.0.1):
+    - PocketSocket/Client (= 1.0.1)
+    - PocketSocket/Core (= 1.0.1)
+    - PocketSocket/Server (= 1.0.1)
+  - PocketSocket/Client (1.0.1):
+    - PocketSocket/Core
+  - PocketSocket/Core (1.0.1)
+  - PocketSocket/Server (1.0.1):
+    - PocketSocket/Client
+  - Reveal-iOS-SDK (1.6.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SimpleKeychain (0.7.0)
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
+
+DEPENDENCIES:
+  - GitHubOAuthController
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - Meteor
+  - Reveal-iOS-SDK
+  - SDWebImage
+  - YTKKeyValueStore
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GitHubOAuthController: 9e86d37001282ed1bdd1d7f7534428754fa2a397
+  InflectorKit: 64497199e6764f4d8337cab7f700a77b13d76a73
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Meteor: c7158a73a5b4af79f75bff0e8c29fcd6a525e3f3
+  PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SimpleKeychain: b50cef3b87939d480ea1143425c00f5b4b70fe21
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
+
+PODFILE CHECKSUM: f7fa0821318b2173cbdba5b63ebedb32c824e320
+
+COCOAPODS: 1.0.1
