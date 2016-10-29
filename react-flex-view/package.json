@@ -1,0 +1,12 @@
+{
+  "name": "react-flex-box",
+  "version": "0.0.1",
+  "description": "Another react flexbox component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react", "component", "css3", "flexbox"],
+  "author": "crapthings",
+  "license": "ISC"
+}

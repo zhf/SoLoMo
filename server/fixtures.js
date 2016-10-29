@@ -8,7 +8,7 @@ const defaultChannels = [
   'react',
 ]
 
-_.each([Messages, Channels], c => {
+_.each([Users, Messages, Channels,], c => {
   c.remove({})
 })
 
@@ -24,4 +24,9 @@ _.each([Messages, Channels], c => {
   Channels.insert({
     name: channel,
   })
+})
+
+!Users.findOne() && Accounts.createUser({
+  username: 'demo',
+  password: 'demo',
 })
