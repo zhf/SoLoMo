@@ -1,2 +1,1 @@
-# SoLoMo
-SoLoMo Open Source Project by StarCore
+# my-meteor-starter
