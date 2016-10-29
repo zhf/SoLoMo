@@ -33,7 +33,7 @@ class HttpRequestHandler(BaseHTTPRequestHandler):
             if self.path=="/api/cutWords":
                 words = post_values["data"]
                 topN = post_values["topN"]
-                cutWords = cutWord.apply(words,topN)
+                cutWords = cutWord.applyParallel(words,topN)
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
@@ -48,6 +48,7 @@ class HttpRequestHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(json.dumps(matchers))
         except Exception, e:
+            print e
             self.send_error(401,'Url Not Found or Data format Error: %s' % self.path)
 
 if __name__ == '__main__':

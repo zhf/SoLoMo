@@ -5,14 +5,26 @@ import jieba
 import sys
 from collections import Counter
 import re
+import jieba.posseg as pseg
 
-def apply(text,topN):
-
+def apply(text,topN): 
 	seg_list = jieba.cut(text)
 	seg_list = filter(minLength, seg_list);
-	# print("Result: \n" + "\n".join(seg_list)) 
-	return calcWordFreq(seg_list, 3)
+	# print("Result: \n" + "\n".join(seg_list))
+	return calcWordFreq(seg_list, topN)
 
+def applyParallel(text,topN):
+	# 开启并行分词模式，参数为并行进程数
+	jieba.enable_parallel(4) 
+	# jieba.disable_parallel() 
+	seg_list = []
+	words = pseg.cut(text)
+	for word, flag in words:
+		print word,flag
+		if flag=="n":
+			seg_list.append(word)
+	print("Result: \n" + "\n".join(seg_list))
+	return calcWordFreq(seg_list, topN)
 def minLength(x): return len(x) >= 2
 
 
