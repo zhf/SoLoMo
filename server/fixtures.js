@@ -28,14 +28,14 @@ Accounts.createUser({
   avatarUrl: faker.internet.avatar(),
 })
 
-!Messages.findOne() && _.times(200, n => {
-  Messages.direct.insert({
-    text: faker.lorem.sentences(),
-    channel: _.sample(defaultChannels),
-    createdAt: new Date(),
-    userId: _.sample(userIds),
-  })
-})
+// !Messages.findOne() && _.times(200, n => {
+//   Messages.direct.insert({
+//     text: faker.lorem.sentences(),
+//     channel: _.sample(defaultChannels),
+//     createdAt: new Date(),
+//     userId: _.sample(userIds),
+//   })
+// })
 
 !Channels.findOne() && _.each(defaultChannels, channel => {
   Channels.insert({

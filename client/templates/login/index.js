@@ -10,7 +10,7 @@ const index = () => <div>
 function submit(e) {
   e.preventDefault()
   const opt = form2js('loginForm')
-  Meteor.loginWithPassword(opt.username, opt.password)
+  Meteor.loginWithPassword(opt.username, opt.password, err => !err && FlowRouter.go('/'))
 }
 
 export default index

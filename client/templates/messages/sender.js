@@ -11,9 +11,8 @@ function submit(e) {
   const opt = form2js(form.id)
   opt.channel = FlowRouter.current().params.name
   if (Meteor.getRouteParams('_id')) {
-    opt.to = Meteor.getRouteParams('_id')
+    opt.toId = Meteor.getRouteParams('_id')
   }
-  console.log(opt)
   Meteor.call('messages:new', opt, (err) => !err && form.reset())
 }
 
