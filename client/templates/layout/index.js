@@ -4,7 +4,7 @@ import Login from '../login'
 
  const layout = ({ content, userId }) => userId ? <div className='flex flex-height flex-column'>
   <Nav activeTab={location.path}/>
-  <div className='flex-1 flex-scroll'>
+  <div id='ui-main' className='flex-1 flex-scroll'>
     {content()}
   </div>
 </div> : <Login />
