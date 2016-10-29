@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WMPageController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YTKKeyValueStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,17 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>102FD0D656F5EBC22B7BB565054C34D4</key>
+		<key>0C145DB1523D7B13D5D9646590256F56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A26EB1FDE7D2EA610B504B413335666</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1DD7A303B847EAE5674A09469C56E8F5</key>
+		<key>4222E96FBA32D457193A8F1F2E494715</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,7 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E239424DBFEB0106C3ECB7997EF3053D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>EBAADF107D1B9E177B8C35DDE8F2F3A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEE3D140117DBB9327A438629A048AC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

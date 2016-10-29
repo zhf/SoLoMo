@@ -13,4 +13,5 @@ target "SoLoMo-iOSClicent" do
 	pod 'Meteor' 
 	pod 'YTKKeyValueStore'
 	pod 'GitHubOAuthController'
+	pod 'WMPageController'
 end

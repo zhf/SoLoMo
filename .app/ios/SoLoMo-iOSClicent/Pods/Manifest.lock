@@ -25,6 +25,7 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SimpleKeychain (0.7.0)
+  - WMPageController (2.0.2)
   - YTKKeyValueStore (0.1.2):
     - FMDB (~> 2.0)
 
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - Meteor
   - Reveal-iOS-SDK
   - SDWebImage
+  - WMPageController
   - YTKKeyValueStore
 
 SPEC CHECKSUMS:
@@ -50,8 +52,9 @@ SPEC CHECKSUMS:
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SimpleKeychain: b50cef3b87939d480ea1143425c00f5b4b70fe21
+  WMPageController: 2267f3b40620eb0a74abb19ee2a46ce1d7c61754
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: f7fa0821318b2173cbdba5b63ebedb32c824e320
+PODFILE CHECKSUM: 7113c0e93d6ebceeaf29f000f2a8ed571c0e6490
 
 COCOAPODS: 1.0.1
