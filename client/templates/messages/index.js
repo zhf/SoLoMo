@@ -5,7 +5,7 @@ const data = {
 }
 
 const index = () => <MeteorDataContainer sources={{ data, }} component={({ messages }) => <div>
-  {messages.map(message => <p>
+  {messages.map(({ _id, ...message }) => <p key={_id}>
     {message.text}
   </p>)}
 </div>} />

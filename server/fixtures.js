@@ -15,7 +15,7 @@ _.each([Messages, Channels], c => {
 !Messages.findOne() && _.times(200, n => {
   Messages.insert({
     text: faker.lorem.sentences(),
-    channel: _.sample([defaultChannels]),
+    channel: _.sample(defaultChannels),
     createdAt: new Date(),
   })
 })
