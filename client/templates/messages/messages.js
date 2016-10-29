@@ -1,9 +1,14 @@
 import Channels from '/collections/channels'
 
+const subscriptions = {
+  'messages:channels:name' () {
+    return [Meteor.getChannelName()]
+  }
+}
+
 const data = {
 
   channel() {
-    console.log(FlowRouter.current())
     return Channels.findOne()
   },
 
@@ -14,7 +19,7 @@ const data = {
 
 }
 
-const index = () => <MeteorDataContainer sources={{ data, }} component={({ messages }) => <div>
+const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages }) => <div>
   {messages.map(({ _id, ...message }) => <p key={_id}>
     {message.text}
   </p>)}
