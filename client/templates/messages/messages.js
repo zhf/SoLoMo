@@ -2,6 +2,8 @@ import Channels from '/collections/channels'
 
 import Hook from '/react-hook'
 
+import SkillSquare from '../skillSquare'
+
 const subscriptions = {
   'messages:channels:name'() {
     return [Meteor.getRouteParams('name')]
@@ -66,7 +68,7 @@ const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} comp
     {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : ''} className="ui-message">
       <div className="message-header">
         <img src={user.avatarUrl} className='ui-img-circle ui-avatar ui-pointer' onClick={() => viewProfile(message.userId) } />
-        <span className='FIXME'>Skill Square</span>
+        <SkillSquare />
         <span className='ui-pointer chatter-name' onClick={() => viewProfile(message.userId)}>{user.username}</span>
       </div>
       <div>{message.text}</div>
