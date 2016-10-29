@@ -55,7 +55,7 @@ Meteor.isServer && Meteor.publishTransformed('messages:my', function () {
       { userId: this.userId },
       { toId: this.userId },
       { channel: {
-        $in: user.channels || []
+        $in: user.channels ? user.channels : []
       }}
     ]}, {
     sort: {
@@ -63,7 +63,18 @@ Meteor.isServer && Meteor.publishTransformed('messages:my', function () {
     }
   }).serverTransform({
     user(message) {
-      return Users.findOne(message.userId)
+      return Users.findOne(message.userId, {
+        fields: {
+          services: false
+        }
+      })
+    },
+    to(message) {
+      return Users.findOne(message.toId, {
+        fields: {
+          services: false
+        }
+      })
     }
   })
 })
