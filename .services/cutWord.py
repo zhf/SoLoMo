@@ -6,7 +6,7 @@ import sys
 from collections import Counter
 import re
 
-def cutWords(text,topN):
+def apply(text,topN):
 
 	seg_list = jieba.cut(text)
 	seg_list = filter(minLength, seg_list);

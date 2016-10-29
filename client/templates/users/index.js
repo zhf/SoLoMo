@@ -11,8 +11,21 @@ const data = {
   }
 }
 
-const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ user }) => <div>
-  <h3>{user.username}</h3>
+const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ user }) => <div className='flex flex-column'>
+  <div className='flex flex-center'>
+    <div className='flex flex-column'>
+      <img src={user.avatarUrl} />
+      <h4>{user.username}</h4>
+    </div>
+  </div>
+
+  <div>
+    {user.intro}
+  </div>
+
+  <div>
+    <a href={`/users/${user._id}/messages`}>talk</a>
+  </div>
 </div>
 } />
 

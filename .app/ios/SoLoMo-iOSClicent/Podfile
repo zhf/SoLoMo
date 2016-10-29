@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target "SoLoMo-iOSClicent" do
+	pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+    pod 'MBProgressHUD'
+	pod 'SDWebImage'
+	pod 'Masonry'
+	pod 'IQKeyboardManager'   
+	pod 'Meteor' 
+	pod 'YTKKeyValueStore'
+	pod 'GitHubOAuthController'
+end
