@@ -1,5 +1,5 @@
 const index = () => <div>
-  messages
+  profile
 </div>
 
 export default index

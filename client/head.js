@@ -1,1 +1,1 @@
-DocHead.setTitle('my-meteor-starter')
+DocHead.setTitle('SoLoMo')
