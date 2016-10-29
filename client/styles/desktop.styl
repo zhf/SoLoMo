@@ -97,7 +97,7 @@ a
 .flex-grow
   flex-grow 1
 
-input[type=text], select
+input[type=text], input[type=password], select
   border: 1px solid #ccc;
   border-radius: 2px;
   font-size 1.1em
@@ -116,3 +116,21 @@ input[type=submit]
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+.channel
+  margin-left 56px
+  position relative
+  height 56px
+  width 100%
+  border-bottom 1px solid #ddd
+  font-size 16px
+  color #333
+  overflow visible
+  & *
+    line-height 56px
+  img
+    position absolute
+    width 40px
+    height @width
+    left -56px
+    top 8px
