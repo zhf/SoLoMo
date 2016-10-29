@@ -1,64 +1,84 @@
 [
 	{
 		"name": "Angular",
-		"logo": "angular.png"
+		"logo": "angular.png",
+		"color": "#ff0000"
 	},
 	{
 		"name": "React",
 		"slogan": "Faster than Angular!",
-		"logo": "react.png"
+		"logo": "react.png",
+		"color": "#0000ff"
 	},
 	{
 		"name": "Coffee Script",
-		"logo": "coffeescript.png"
+		"logo": "coffeescript.png",
+		"color": "#888888"
 	},
 	{
 		"name": "D3",
-		"logo": "d3.png"
+		"logo": "d3.png",
+		"color": "yellow"
 	},
 	{
 		"name": "Javascript",
-		"logo": "javascript.png"
+		"logo": "javascript.png",
+		"color": "#888888"
 	},
 	{
 		"name": "Mac",
-		"logo": "mac.png"
+		"logo": "mac.png",
+		"color": "#888888"
 	},
 	{
 		"name": "Meteor",
 		"slogan": "The fatest way to build Javascript app.",
-		"logo": "meteor.png"
+		"logo": "meteor.png",
+		"color": "#888888"
 	},
 	{
 		"name": "MongoDB",
-		"logo": "mongodb.png"
+		"logo": "mongodb.png",
+		"color": "#888888"
 	},
 	{
 		"name": "NodeJS",
-		"logo": "nodejs.png"
+		"logo": "nodejs.png",
+		"color": "green"
 	},
 	{
-		"name": "pc",
-		"logo": "pc.png"
+		"name": "PC",
+		"logo": "pc.png",
+		"color": "#888888"
 	},
 	{
 		"name": "PHP",
-		"logo": "php.png"
+		"logo": "php.png",
+		"color": "#888888"
 	},
 	{
 		"name": "Ruby on Rails",
-		"logo": "ruby-on-rails.png"
+		"logo": "ruby-on-rails.png",
+		"color": "red"
 	},
 	{
 		"name": "ruby",
-		"logo": "ruby.png"
+		"logo": "ruby.png",
+		"color": "red"
 	},
 	{
 		"name": "sql",
-		"logo": "sql.png"
+		"logo": "sql.png",
+		"color": "#888888"
 	},
 	{
-		"name": "swift",
-		"logo": "swift.png"
+		"name": "Swift",
+		"logo": "swift.png",
+		"color": "orange"
+	},
+	{
+		"name": "Meteor",
+		"logo": "meteor.png",
+		"color": "red"
 	}
 ]
