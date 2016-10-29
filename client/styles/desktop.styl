@@ -134,3 +134,46 @@ input[type=submit]:hover {
     height @width
     left -56px
     top 8px
+
+.profile
+  text-align center
+  img.profile-pic
+    display block
+    width 128px
+    height @width
+    border-radius 50%
+    margin 32px auto 16px auto
+  .profile-username
+    font-weight 500
+    margin 8px 0
+  .profile-github
+    color #999
+  .profile-skills
+    margin-top 16px
+    background-color white
+    font-size 0
+    &>li
+      width 25%
+      display inline-block
+      font-size 16px
+      padding-bottom 8px
+      &>img
+        display block
+        margin 8px auto
+      .skill-title, .skill-type
+        display block
+      .skill-type
+        color #999
+  .profile-intro
+    padding 16px
+    color #666
+
+.send-message-btn
+  display block
+  background-color theme-color
+  border-radius 2px
+  padding 8px
+  width 200px
+  margin 16px auto
+  color white
+  box-shadow 0 2px 5px RGBA(0, 0, 0, 0.26)
