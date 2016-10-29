@@ -19,16 +19,12 @@
 #import "SharedDatabaseHelper.h"
 #import "AccountManager.h"
 #import "LoginWithGitHubViewController.h"
-#import <Meteor.h>
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate{
-    METCoreDataDDPClient *_client;
-}
-
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -150,8 +146,13 @@
 #pragma mark -
 
 - (void) configMeteor {
-    _client = [[METCoreDataDDPClient alloc] initWithServerURL:[NSURL URLWithString:BASEURL]];
-    [_client connect];
+    self.client = [[METDDPClient alloc] initWithServerURL:[NSURL URLWithString:BASEURL]];
+    [self.client connect];
+    [self.client addSubscriptionWithName:@"users:all"
+                                     parameters:nil
+                              completionHandler:^(NSError *error) {
+                                  
+                              }];
 }
 
 #pragma mark - APP Config
@@ -172,15 +173,15 @@
 }
 
 - (void)setupRootViewController{
-    //self.window.rootViewController = self.tabBarController;
-//  /*
+    self.window.rootViewController = self.tabBarController;
+  /*
     if ([[AccountManager sharedAccountManager] getCurrentUser]) {
         self.window.rootViewController = self.tabBarController;
     }else{
         self.window.rootViewController = [[BaseNavigationController alloc]
                                           initWithRootViewController:[[LoginWithGitHubViewController alloc] init]];
     }
-//  */
+  */
 }
 
 @end

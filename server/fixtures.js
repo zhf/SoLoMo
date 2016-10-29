@@ -1,7 +1,5 @@
 import channels from '/channels.json'
 
-console.log(channels)
-
 // FIXME import default channels from `../channels.json`
 const defaultChannels = [
   'general',

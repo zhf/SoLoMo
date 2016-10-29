@@ -14,8 +14,9 @@
 		838AE7341DC4AD61001D4A6C /* DatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE72E1DC4AD61001D4A6C /* DatabaseHelper.m */; };
 		838AE7351DC4AD61001D4A6C /* SharedDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE7301DC4AD61001D4A6C /* SharedDatabaseHelper.m */; };
 		8393AE401DC4AC7200D6ACE5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8393AE3F1DC4AC7200D6ACE5 /* User.m */; };
+		83A98BA71DC4CE01002643D5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A98BA61DC4CE01002643D5 /* MapViewController.m */; };
+		83A98BAA1DC4CE0D002643D5 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A98BA91DC4CE0D002643D5 /* ListViewController.m */; };
 		83BC17881DC4AED6001468DC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17871DC4AED6001468DC /* Config.m */; };
-		83BC178B1DC4B745001468DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83BC178A1DC4B745001468DC /* GoogleService-Info.plist */; };
 		83BC17911DC4BFCE001468DC /* ChatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17901DC4BFCE001468DC /* ChatsViewController.m */; };
 		83BC17941DC4C01C001468DC /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17931DC4C01C001468DC /* GroupsViewController.m */; };
 		83BC17971DC4C183001468DC /* GaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BC17961DC4C183001468DC /* GaysViewController.m */; };
@@ -42,10 +43,13 @@
 		838AE7301DC4AD61001D4A6C /* SharedDatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDatabaseHelper.m; sourceTree = "<group>"; };
 		8393AE3E1DC4AC7200D6ACE5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8393AE3F1DC4AC7200D6ACE5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		83A98BA51DC4CE01002643D5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		83A98BA61DC4CE01002643D5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		83A98BA81DC4CE0D002643D5 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		83A98BA91DC4CE0D002643D5 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		83BC17861DC4AED6001468DC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		83BC17871DC4AED6001468DC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		83BC17891DC4B169001468DC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		83BC178A1DC4B745001468DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83BC178F1DC4BFCE001468DC /* ChatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsViewController.h; sourceTree = "<group>"; };
 		83BC17901DC4BFCE001468DC /* ChatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsViewController.m; sourceTree = "<group>"; };
 		83BC17921DC4C01C001468DC /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsViewController.h; sourceTree = "<group>"; };
@@ -133,7 +137,6 @@
 		83F0D2C41DC4758F0046276C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				83BC178A1DC4B745001468DC /* GoogleService-Info.plist */,
 				83F0D2D51DC4758F0046276C /* Info.plist */,
 				83F0D2C51DC4758F0046276C /* main.m */,
 				83BC17891DC4B169001468DC /* PrefixHeader.pch */,
@@ -174,6 +177,10 @@
 				83F0D2EE1DC481AB0046276C /* ProfileViewController.m */,
 				834FE9671DC48E05009CA9DE /* LoginWithGitHubViewController.h */,
 				834FE9681DC48E05009CA9DE /* LoginWithGitHubViewController.m */,
+				83A98BA51DC4CE01002643D5 /* MapViewController.h */,
+				83A98BA61DC4CE01002643D5 /* MapViewController.m */,
+				83A98BA81DC4CE0D002643D5 /* ListViewController.h */,
+				83A98BA91DC4CE0D002643D5 /* ListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F0D2D11DC4758F0046276C /* Assets.xcassets in Resources */,
-				83BC178B1DC4B745001468DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,10 +338,12 @@
 				83BC17911DC4BFCE001468DC /* ChatsViewController.m in Sources */,
 				838AE7341DC4AD61001D4A6C /* DatabaseHelper.m in Sources */,
 				8393AE401DC4AC7200D6ACE5 /* User.m in Sources */,
+				83A98BAA1DC4CE0D002643D5 /* ListViewController.m in Sources */,
 				83F0D2E01DC480A30046276C /* BaseNavigationController.m in Sources */,
 				838AE7321DC4AD61001D4A6C /* AccountManager.m in Sources */,
 				83BC17881DC4AED6001468DC /* Config.m in Sources */,
 				83F0D2E11DC480A30046276C /* BaseViewController.m in Sources */,
+				83A98BA71DC4CE01002643D5 /* MapViewController.m in Sources */,
 				83BC17971DC4C183001468DC /* GaysViewController.m in Sources */,
 				83F0D2EF1DC481AB0046276C /* ProfileViewController.m in Sources */,
 				838AE7311DC4AD61001D4A6C /* AccountHelper.m in Sources */,
