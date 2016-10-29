@@ -31,7 +31,11 @@ const data = {
     const _id = Meteor.getRouteParams('_id')
 
     if (channel) {
-      return Messages.find({ channel, }).map(message => ({
+      return Messages.find({ channel, }, {
+        sort: {
+          createdAt: 1
+        }
+      }).map(message => ({
         user: message.user ? message.user : Meteor.users.findOne(message.userId),
         ...message,
       }))
@@ -43,6 +47,10 @@ const data = {
           { $and: [{ userId: Meteor.userId() }, { to: _id }] },
           { $and: [{ userId: _id }, { to: Meteor.userId() }] },
         ]
+      }, {
+        sort: {
+          createdAt: 1
+        }
       }).map(message => ({
         user: message.user ? message.user : Meteor.users.findOne(message.userId),
         ...message,
@@ -55,7 +63,7 @@ const data = {
 
 const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages, channelName }) => <div className='flex flex-column'>
   <div id='ui-messages' className='flex flex-column flex-1'>
-    {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : ''}>
+    {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : 'ui-user-message'}>
       <div>
         <img src={user.avatarUrl} className='ui-img-circle ui-avatar ui-pointer' onClick={() => viewProfile(message.userId) } />
         <span className='ui-pointer' onClick={() => viewProfile(message.userId)}>{user.username}</span>

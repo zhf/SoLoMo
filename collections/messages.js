@@ -23,7 +23,7 @@ Meteor.methods({
 Meteor.isServer && Meteor.publishTransformed('messages:channels:name', function (name) {
   return Messages.find({ channel: name }, {
     sort: {
-      createdAt: -1
+      createdAt: 1
     }
   }).serverTransform({
     user(message) {
@@ -39,7 +39,7 @@ Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', func
       { $and: [{ userId: ids[1] }, { to: ids[0] }]}
     ]}, {
     sort: {
-      createdAt: -1
+      createdAt: 1
     }
   }).serverTransform({
     user(message) {
