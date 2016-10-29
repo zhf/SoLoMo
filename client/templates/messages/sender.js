@@ -13,6 +13,7 @@ function submit(e) {
   if (Meteor.getRouteParams('_id')) {
     opt.to = Meteor.getRouteParams('_id')
   }
+  console.log(opt)
   Meteor.call('messages:new', opt, (err) => !err && form.reset())
 }
 
