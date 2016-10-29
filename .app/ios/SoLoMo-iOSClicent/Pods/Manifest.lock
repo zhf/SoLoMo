@@ -1,4 +1,5 @@
 PODS:
+  - BaiduMapKit (3.1.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -30,6 +31,7 @@ PODS:
     - FMDB (~> 2.0)
 
 DEPENDENCIES:
+  - BaiduMapKit
   - GitHubOAuthController
   - IQKeyboardManager
   - Masonry
@@ -41,6 +43,7 @@ DEPENDENCIES:
   - YTKKeyValueStore
 
 SPEC CHECKSUMS:
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GitHubOAuthController: 9e86d37001282ed1bdd1d7f7534428754fa2a397
   InflectorKit: 64497199e6764f4d8337cab7f700a77b13d76a73
@@ -55,6 +58,6 @@ SPEC CHECKSUMS:
   WMPageController: 2267f3b40620eb0a74abb19ee2a46ce1d7c61754
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-PODFILE CHECKSUM: 7113c0e93d6ebceeaf29f000f2a8ed571c0e6490
+PODFILE CHECKSUM: 0cf20d790466d8dd14f398e0af62df291d2145a4
 
 COCOAPODS: 1.0.1
