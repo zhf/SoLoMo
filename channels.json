@@ -1,0 +1,64 @@
+[
+	{
+		"name": "Angualar",
+		"logo": "angular.png"
+	},
+	{
+		"name": "React",
+		"slogan": "Faster than Angular!",
+		"logo": "react.png"
+	},
+	{
+		"name": "Coffee Script",
+		"logo": "coffesscript.png"
+	},
+	{
+		"name": "D3",
+		"logo": "d3.png"
+	},
+	{
+		"name": "Javascript",
+		"logo": "javascript.png"
+	},
+	{
+		"name": "Mac",
+		"logo": "mac.png"
+	},
+	{
+		"name": "Meteor",
+		"slogan": "The fatest way to build Javascript app.",
+		"logo": "meteor.png"
+	},
+	{
+		"name": "MongoDB",
+		"logo": "mongodb.png"
+	},
+	{
+		"name": "NodeJS",
+		"logo": "nodejs.png"
+	},
+	{
+		"name": "pc",
+		"logo": "pc.png"
+	},
+	{
+		"name": "PHP",
+		"logo": "php.png"
+	},
+	{
+		"name": "Ruby on Rails",
+		"logo": "ruby-on-rails.png"
+	},
+	{
+		"name": "ruby",
+		"logo": "ruby.png"
+	},
+	{
+		"name": "sql",
+		"logo": "sql.png"
+	},
+	{
+		"name": "swift",
+		"logo": "swift.png"
+	}
+]
