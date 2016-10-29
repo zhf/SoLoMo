@@ -1,3 +1,7 @@
+body
+  font-family 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif
+  font-size 16px
+
 #ui-nav
   height 60px
   background-color blue
@@ -9,7 +13,6 @@
   & > div
     margin 32px 0
     padding 32px
-    border 1px solid #efefef
     background-color white
   & > div:first-child
     margin-top (32 * 2)px
@@ -21,7 +24,12 @@
   & > div:nth-child(even)
     margin-left 80px
     border-radius 12px 0 0 12px
-    background-color red
+  & > .ui-my-message
+    margin-right 0 !important
+    border-radius 12px 0 0 12px !important
+    margin-left 80px !important
+    background-color green !important
+    color white !important
 
 #ui-sender
   height 60px
@@ -36,3 +44,6 @@
 
 .ui-img-circle
   border-radius 50%
+
+.ui-pointer
+  cursor pointer
