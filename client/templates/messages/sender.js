@@ -1,7 +1,7 @@
 const index = () => <div id='ui-sender'>
-  <form id='messageForm' onSubmit={submit}>
-    <input type='text' name='text' placeholder='' required />
-    <input type='submit' />
+  <form id='messageForm' onSubmit={submit} className='flex flex-row'>
+    <input type='text' className='flex-grow' name='text' placeholder='' required />
+    <input type='submit' value="&nbsp;SEND" />
   </form>
 </div>
 
