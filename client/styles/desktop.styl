@@ -1,35 +1,76 @@
+bubble-radius = 8px
+bubble-edge-margin = 32px
+theme-color = #4A90E2
+
 body
-  font-family 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif
+  font-family 'Roboto', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif
   font-size 16px
+  background-color #efefef
+
+.FIXME
+  color red
+  text-decoration line-through
+
+a
+  text-decoration: none
 
 #ui-nav
+  font-family 'HelveticaNeue-CondensedBold', sans-serif
   height 60px
-  background-color blue
+  background-color white
+  box-shadow 0 2px 5px RGBA(0, 0, 0, 0.26)
   & *
-    color white
+    color #666
+  &>a
+    border-bottom 5px solid transparent
+    padding-top 10px
+  &>a.active
+    border-bottom 5px solid theme-color
+  span.active
+    color theme-color
+
+
+#ui-main
+  margin-top: 5px
 
 #ui-messages
-  background-color #efefef
   & > div
-    margin 32px 0
-    padding 32px
+    margin 16px 0 32px 0
+    padding 16px
     background-color white
+    position relative
+    overflow visible
+    border 1px solid #ddd
+    .message-header
+      margin-bottom 8px
+    .ui-avatar
+      top -20px
   & > div:first-child
     margin-top (32 * 2)px
   & > div:last-child
     margin-bottom (32 * 2)px
   & > div:nth-child(odd)
-    margin-right 80px
-    border-radius 0 12px 12px 0
+    margin-right bubble-edge-margin
+    border-radius 0 bubble-radius bubble-radius 0
+    .ui-avatar
+      right -20px
+    .message-header
+      text-align right
   & > div:nth-child(even)
-    margin-left 80px
-    border-radius 12px 0 0 12px
+    margin-left bubble-edge-margin
+    border-radius bubble-radius 0 0 bubble-radius
+    .ui-avatar
+      left -20px
   & > .ui-my-message
     margin-right 0 !important
     border-radius 12px 0 0 12px !important
     margin-left 80px !important
     background-color green !important
     color white !important
+
+.chatter-name
+  font-weight 500
+  color #999
 
 #ui-sender
   height 60px
@@ -40,6 +81,9 @@ body
   border-bottom 1px solid #efefef
 
 .ui-avatar
+  position absolute
+  display block
+  box-shadow 0 2px 5px RGBA(0,0,0,0.26)
   width 40px
   height @width
 

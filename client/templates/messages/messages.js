@@ -53,10 +53,11 @@ const data = {
 
 const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages, channelName }) => <div className='flex flex-column'>
   <div id='ui-messages' className='flex flex-column flex-1'>
-    {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : ''}>
-      <div>
+    {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : ''} className="ui-message">
+      <div className="message-header">
         <img src={user.avatarUrl} className='ui-img-circle ui-avatar ui-pointer' onClick={() => viewProfile(message.userId) } />
-        <span className='ui-pointer' onClick={() => viewProfile(message.userId)}>{user.username}</span>
+        <span className='FIXME'>Skill Square</span>
+        <span className='ui-pointer chatter-name' onClick={() => viewProfile(message.userId)}>{user.username}</span>
       </div>
       <div>{message.text}</div>
     </div>)}

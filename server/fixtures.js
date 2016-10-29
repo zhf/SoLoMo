@@ -1,3 +1,4 @@
+// FIXME import default channels from `../channels.json`
 const defaultChannels = [
   'general',
   'random',
