@@ -1,5 +1,7 @@
 import Channels from '/collections/channels'
 
+import Hook from '/react-hook'
+
 const subscriptions = {
   'messages:channels:name' () {
     return [Meteor.getChannelName()]
@@ -38,6 +40,11 @@ const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} comp
       <div>{message.text}</div>
     </div>)}
   </div>
+  <Hook didMount={scrollToBottom} didUpdate={scrollToBottom} />
 </div>} />
+
+function scrollToBottom() {
+  $('#ui-main').scrollTop(999999)
+}
 
 export default index

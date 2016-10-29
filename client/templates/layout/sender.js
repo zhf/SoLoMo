@@ -6,7 +6,7 @@ import Login from '../login'
 
  const layout = ({ content, userId }) => userId ? <div className='flex flex-height flex-column'>
   <Nav />
-  <div className='flex-1'>
+  <div id='ui-main' className='flex-1'>
     {content()}
   </div>
   <Sender />
