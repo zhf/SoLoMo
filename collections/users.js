@@ -9,8 +9,15 @@ Meteor.isServer && Meteor.publish('users:me', function () {
 })
 
 Meteor.isServer && Meteor.publish('users:_id', function (_id) {
-  console.log(_id)
   return Users.find({ _id }, {
+    fields: {
+      services: false
+    }
+  })
+})
+
+Meteor.isServer && Meteor.publish('users:all', function () {
+  return Users.find({}, {
     fields: {
       services: false
     }

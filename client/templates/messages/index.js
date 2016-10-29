@@ -10,13 +10,15 @@ const data = {
       }
     }).fetch()
 
+    console.log(messages)
+
     return _.uniqBy(messages, 'channel')
   }
 }
 
 const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages }) => <div className='flex flex-column'>
   {messages.map(({ ...message }) => <div key={message._id} className='flex flex-center-y pdlr ui-list ui-pointer' onClick={() => whichView(message)}>
-    [{message.channel}]： {message.text}
+    [{message.channel || message.user.username}]： {message.text}
   </div>)}
 </div>} />
 
