@@ -27,7 +27,9 @@ const data = {
 
   messages() {
     const channel = Meteor.getRouteParams('name')
+
     const _id = Meteor.getRouteParams('_id')
+
     if (channel) {
       return Messages.find({ channel, }).map(message => ({
         user: message.user ? message.user : Meteor.users.findOne(message.userId),
@@ -39,7 +41,7 @@ const data = {
       return Messages.find({
         $or: [
           { $and: [{ userId: Meteor.userId() }, { to: _id }] },
-          { $and: [{ userId: _id }, { to: Meteor.userId() }]}
+          { $and: [{ userId: _id }, { to: Meteor.userId() }] },
         ]
       }).map(message => ({
         user: message.user ? message.user : Meteor.users.findOne(message.userId),

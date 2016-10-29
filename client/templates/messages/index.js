@@ -9,9 +9,6 @@ const data = {
         createdAt: -1
       }
     }).fetch()
-
-    console.log(messages)
-
     return _.uniqBy(messages, 'channel')
   }
 }
@@ -23,7 +20,17 @@ const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} comp
 </div>} />
 
 function whichView(message) {
-  return message.channel ? FlowRouter.go(`/channels/${message.channel}`) : FlowRouter.go(`/users/${message.to}/messages`)
+
+  if (message.channel) {
+    return FlowRouter.go(`/channels/${message.channel}`)
+  } else {
+    if (Meteor.userId() == message.userId) {
+      return FlowRouter.go(`/users/${message.to}/messages`)
+    } else {
+      return FlowRouter.go(`/users/${message.userId}/messages`)
+    }
+  }
+
 }
 
 export default index

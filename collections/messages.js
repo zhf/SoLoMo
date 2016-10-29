@@ -9,6 +9,13 @@ Messages.before.insert(function (userId, doc) {
 
 Meteor.methods({
   'messages:new'(opt) {
+    if (opt.channel) {
+      Meteor.users.update(this.userId, {
+        $addToSet: {
+          channels: opt.channel
+        }
+      })
+    }
     Messages.insert(opt)
   }
 })
@@ -28,8 +35,8 @@ Meteor.isServer && Meteor.publishTransformed('messages:channels:name', function 
 Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', function (ids) {
   return Messages.find({
     $or: [
-      { $and: [{ userId: ids[1] }, { to: ids[1] }] },
-      { $and: [{ userId: ids[0] }, { to: ids[0] }]}
+      { $and: [{ userId: ids[0] }, { to: ids[1] }] },
+      { $and: [{ userId: ids[1] }, { to: ids[0] }]}
     ]}, {
     sort: {
       createdAt: -1
@@ -42,8 +49,15 @@ Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', func
 })
 
 Meteor.isServer && Meteor.publishTransformed('messages:my', function () {
+  const user = Meteor.users.findOne(this.userId)
   return Messages.find({
-    $or: [{ userId: this.userId }, { to: this.userId }]}, {
+    $or: [
+      { userId: this.userId },
+      { to: this.userId },
+      { channel: {
+        $in: user.channels || []
+      }}
+    ]}, {
     sort: {
       createdAt: -1
     }

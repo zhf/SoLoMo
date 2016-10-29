@@ -48,6 +48,7 @@ class HttpRequestHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(json.dumps(matchers))
         except Exception, e:
+            print e
             self.send_error(401,'Url Not Found or Data format Error: %s' % self.path)
 
 if __name__ == '__main__':
