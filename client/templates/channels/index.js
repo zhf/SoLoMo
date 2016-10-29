@@ -8,8 +8,8 @@ const data = {
   },
 }
 
-const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ channels }) => <div>
-  {channels.map(({ _id, name, ...channel }) => <a key={_id} href={`/channels/${name}`}>
+const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ channels }) => <div className='flex flex-column'>
+  {channels.map(({ _id, name, ...channel }) => <a key={_id} className='flex flex-center-y pdlr list' href={`/channels/${name}`}>
     {name}
   </a>)}
 </div>} />
