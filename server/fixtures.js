@@ -15,6 +15,7 @@ _.each([Users, Messages, Channels,], c => {
 const userIds = _.times(20, n => {
   return Meteor.users.insert({
     username: faker.internet.userName(),
+    intro: faker.lorem.paragraphs(),
     avatarUrl: faker.internet.avatar(),
   })
 })
@@ -22,6 +23,7 @@ const userIds = _.times(20, n => {
 Accounts.createUser({
   username: 'demo',
   password: 'demo',
+  intro: faker.lorem.paragraphs(),
   avatarUrl: faker.internet.avatar(),
 })
 

@@ -3,8 +3,13 @@ import Channels from '/collections/channels'
 import Hook from '/react-hook'
 
 const subscriptions = {
-  'messages:channels:name' () {
+  'messages:channels:name'() {
     return [Meteor.getRouteParams('name')]
+  },
+
+  'messages:users:conversation'() {
+    const params = [Meteor.getRouteParams('_id'), Meteor.userId()]
+    return [params]
   }
 }
 
@@ -21,11 +26,27 @@ const data = {
   },
 
   messages() {
-    const channel = FlowRouter.current().params.name
-    return Messages.find({ channel, }).map(message => ({
-      user: message.user ? message.user : Meteor.users.findOne(message.userId),
-      ...message,
-    }))
+    const channel = Meteor.getRouteParams('name')
+    const _id = Meteor.getRouteParams('_id')
+    if (channel) {
+      return Messages.find({ channel, }).map(message => ({
+        user: message.user ? message.user : Meteor.users.findOne(message.userId),
+        ...message,
+      }))
+    }
+
+    if (_id) {
+      return Messages.find({
+        $or: [
+          { $and: [{ userId: Meteor.userId() }, { to: _id }] },
+          { $and: [{ userId: _id }, { to: Meteor.userId() }]}
+        ]
+      }).map(message => ({
+        user: message.user ? message.user : Meteor.users.findOne(message.userId),
+        ...message,
+      }))
+    }
+
   }
 
 }
