@@ -45,7 +45,7 @@ class TodoHandler(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
-                self.wfile.write(todos)
+                self.wfile.write(json.dumps(todos))
             if self.path=="/api/recommendation":
                 #  process data
                 coders = post_values["candidates"]
@@ -54,7 +54,7 @@ class TodoHandler(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
-                self.wfile.write(todos)
+                self.wfile.write(json.dumps(todos))
         except Exception, e:
             self.send_error(401,'Url Not Found or Data format Error: %s' % self.path)
         else:
