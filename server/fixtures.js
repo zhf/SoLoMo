@@ -12,11 +12,25 @@ _.each([Users, Messages, Channels,], c => {
   c.remove({})
 })
 
+const userIds = _.times(20, n => {
+  return Meteor.users.insert({
+    username: faker.internet.userName(),
+    avatarUrl: faker.internet.avatar(),
+  })
+})
+
+Accounts.createUser({
+  username: 'demo',
+  password: 'demo',
+  avatarUrl: faker.internet.avatar(),
+})
+
 !Messages.findOne() && _.times(200, n => {
-  Messages.insert({
+  Messages.direct.insert({
     text: faker.lorem.sentences(),
     channel: _.sample(defaultChannels),
     createdAt: new Date(),
+    userId: _.sample(userIds),
   })
 })
 
@@ -24,9 +38,4 @@ _.each([Users, Messages, Channels,], c => {
   Channels.insert({
     name: channel,
   })
-})
-
-!Users.findOne() && Accounts.createUser({
-  username: 'demo',
-  password: 'demo',
 })

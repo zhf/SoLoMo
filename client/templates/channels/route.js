@@ -1,5 +1,7 @@
 import layout from '../layout'
 
+import senderLayout from '../layout/sender'
+
 import Index from './index'
 
 import ChannelMessages from '../messages/messages'
@@ -14,7 +16,7 @@ FlowRouter.route('/channels', {
 
 FlowRouter.route('/channels/:name', {
   action() {
-    Mount(layout, {
+    Mount(senderLayout, {
       content: () => <ChannelMessages />
     })
   }

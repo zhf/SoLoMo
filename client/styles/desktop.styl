@@ -1,9 +1,38 @@
 #ui-nav
-  height 50px
+  height 60px
   background-color blue
   & *
     color white
 
+#ui-messages
+  background-color #efefef
+  & > div
+    margin 32px 0
+    padding 32px
+    border 1px solid #efefef
+    background-color white
+  & > div:first-child
+    margin-top (32 * 2)px
+  & > div:last-child
+    margin-bottom (32 * 2)px
+  & > div:nth-child(odd)
+    margin-right 80px
+    border-radius 0 12px 12px 0
+  & > div:nth-child(even)
+    margin-left 80px
+    border-radius 12px 0 0 12px
+    background-color red
+
+#ui-sender
+  height 60px
+
 .list
-  height 50px
+  height 60px
   border-bottom 1px solid #efefef
+
+.ui-avatar
+  width 40px
+  height @width
+
+.ui-img-circle
+  border-radius 50%
