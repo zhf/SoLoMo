@@ -8,6 +8,7 @@
 
 #import "LoginWithGitHubViewController.h"
 #import "GitHubOAuthController.h"
+#import "AppDelegate.h"
 
 @interface LoginWithGitHubViewController ()
 
@@ -44,18 +45,13 @@
 }
 
 - (void)actionStartTraditional {
-        GitHubOAuthController *oAuthController = [[GitHubOAuthController alloc] initWithClientId:kClientId
+    GitHubOAuthController *oAuthController = [[GitHubOAuthController alloc] initWithClientId:kClientId
                                                                                 clientSecret:kClientSecret
                                                                                        scope:kScope
                                                                                      success:^(NSString *accessToken, NSDictionary *raw) {
-        NSString *message = [NSString stringWithFormat:@"traditional oauth: retrieved access token: %@ \nraw: %@", accessToken, raw];
-        NSLog(@"%@", message);
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"☺" message:message preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-        [alertController addAction:action];
-        [self presentViewController:alertController animated:YES completion:nil];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.client callMethodWithName:@"github:auth" parameters:@[accessToken]];
     } failure:nil];
-    
     [oAuthController showModalFromController:self];
 }
 

@@ -1,15 +1,4 @@
-import channels from '/channels.json'
-
-// FIXME import default channels from `../channels.json`
-const defaultChannels = [
-  'general',
-  'random',
-  'javascript',
-  'es6',
-  'node',
-  'meteor',
-  'react',
-]
+import channelsData from '/channels.json'
 
 _.each([Users, Messages, Channels,], c => {
   c.remove({})
@@ -30,18 +19,22 @@ Accounts.createUser({
   avatarUrl: faker.internet.avatar(),
 })
 
-!Messages.findOne() && _.times(200, n => {
-  Messages.direct.insert({
-    text: faker.lorem.sentences(),
-    channel: _.sample(defaultChannels),
-    createdAt: new Date(),
-    userId: _.sample(userIds),
-  })
-})
-
-!Channels.findOne() && _.each(channels, channel => {
+const channels = _.map(channelsData, channel => {
   Channels.insert({
     name: channel.name,
     logo: channel.logo,
+  })
+
+  return channel
+})
+
+!Messages.findOne() && _.each(channels, channel => {
+  _.times(10, n => {
+    Messages.direct.insert({
+      text: faker.lorem.sentences(),
+      channel: channel.name,
+      createdAt: new Date(),
+      userId: _.sample(userIds),
+    })
   })
 })

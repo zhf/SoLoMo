@@ -174,14 +174,14 @@
 
 - (void)setupRootViewController{
     self.window.rootViewController = self.tabBarController;
-  /*
+/*
     if ([[AccountManager sharedAccountManager] getCurrentUser]) {
         self.window.rootViewController = self.tabBarController;
     }else{
         self.window.rootViewController = [[BaseNavigationController alloc]
                                           initWithRootViewController:[[LoginWithGitHubViewController alloc] init]];
     }
-  */
+*/
 }
 
 @end

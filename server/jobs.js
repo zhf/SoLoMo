@@ -27,7 +27,13 @@ SyncedCron.add({
       }, (err, resp) => {
         if (!err && resp.data.length) {
           _.each(resp.data, tags => {
-            console.log(tags[0])
+
+            Users.update(id, {
+              $addToSet: {
+                dtags: tags[0]
+              }
+            })
+
             if (!Channels.findOne({ name: tags[0] })) {
               Channels.insert({
                 name: tags[0]

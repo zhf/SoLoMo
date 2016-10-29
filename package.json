@@ -5,7 +5,9 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "baidumap": "0.0.4",
     "bcrypt": "^0.8.7",
+    "bluebird": "^3.4.6",
     "faker": "^3.1.0",
     "form2js": "^1.0.0",
     "github": "^6.0.1",
