@@ -1,3 +1,3 @@
-Meteor.getChannelName = function () {
-  return (FlowRouter.current().params && FlowRouter.current().params.name) ? FlowRouter.current().params.name : null
+Meteor.getRouteParams = function (paramsName) {
+  return (FlowRouter.current().params && FlowRouter.current().params[paramsName]) ? FlowRouter.current().params[paramsName] : null
 }

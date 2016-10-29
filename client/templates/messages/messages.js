@@ -4,7 +4,7 @@ import Hook from '/react-hook'
 
 const subscriptions = {
   'messages:channels:name' () {
-    return [Meteor.getChannelName()]
+    return [Meteor.getRouteParams('name')]
   }
 }
 
@@ -32,16 +32,20 @@ const data = {
 
 const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages, channelName }) => <div className='flex flex-column'>
   <div id='ui-messages' className='flex flex-column flex-1'>
-    {messages.map(({ _id, user, ...message }) => <div key={_id}>
+    {messages.map(({ _id, user, ...message }) => <div key={_id} className={(message.userId == Meteor.userId()) ? 'ui-my-message' : ''}>
       <div>
-        <img src={user.avatarUrl} className='ui-img-circle ui-avatar' />
-        <span>{user.username}</span>
+        <img src={user.avatarUrl} className='ui-img-circle ui-avatar ui-pointer' onClick={() => viewProfile(message.userId) } />
+        <span className='ui-pointer' onClick={() => viewProfile(message.userId)}>{user.username}</span>
       </div>
       <div>{message.text}</div>
     </div>)}
   </div>
   <Hook didMount={scrollToBottom} didUpdate={scrollToBottom} />
 </div>} />
+
+function viewProfile(_id) {
+  (_id == Meteor.userId()) ? FlowRouter.go(`/profile`) : FlowRouter.go(`/users/${_id}`)
+}
 
 function scrollToBottom() {
   $('#ui-main').scrollTop(999999)
