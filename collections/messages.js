@@ -35,8 +35,8 @@ Meteor.isServer && Meteor.publishTransformed('messages:channels:name', function 
 Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', function (ids) {
   return Messages.find({
     $or: [
-      { $and: [{ userId: ids[0] }, { to: ids[1] }] },
-      { $and: [{ userId: ids[1] }, { to: ids[0] }]}
+      { $and: [{ userId: ids[0] }, { toId: ids[1] }] },
+      { $and: [{ userId: ids[1] }, { toId: ids[0] }]}
     ]}, {
     sort: {
       createdAt: 1
@@ -53,7 +53,7 @@ Meteor.isServer && Meteor.publishTransformed('messages:my', function () {
   return Messages.find({
     $or: [
       { userId: this.userId },
-      { to: this.userId },
+      { toId: this.userId },
       { channel: {
         $in: user.channels || []
       }}

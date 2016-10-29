@@ -25,7 +25,7 @@ function whichView(message) {
     return FlowRouter.go(`/channels/${message.channel}`)
   } else {
     if (Meteor.userId() == message.userId) {
-      return FlowRouter.go(`/users/${message.to}/messages`)
+      return FlowRouter.go(`/users/${message.toId}/messages`)
     } else {
       return FlowRouter.go(`/users/${message.userId}/messages`)
     }

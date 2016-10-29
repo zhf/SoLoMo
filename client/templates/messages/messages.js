@@ -44,8 +44,8 @@ const data = {
     if (_id) {
       return Messages.find({
         $or: [
-          { $and: [{ userId: Meteor.userId() }, { to: _id }] },
-          { $and: [{ userId: _id }, { to: Meteor.userId() }] },
+          { $and: [{ userId: Meteor.userId() }, { toId: _id }] },
+          { $and: [{ userId: _id }, { toId: Meteor.userId() }] },
         ]
       }, {
         sort: {
