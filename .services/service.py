@@ -33,7 +33,7 @@ class HttpRequestHandler(BaseHTTPRequestHandler):
             if self.path=="/api/cutWords":
                 words = post_values["data"]
                 topN = post_values["topN"]
-                cutWords = cutWord.applyParallel(words,topN)
+                cutWords = cutWord.apply(words,topN)
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()

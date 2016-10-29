@@ -7,6 +7,12 @@ from collections import Counter
 import re
 import jieba.posseg as pseg
 
+blacklist_file = open("blacklist.txt",'r')
+print "load file"
+blacklist = re.split('[\s\ \\,\;\.\!\n]+', blacklist_file.read())
+blacklist_file.close()
+
+
 def apply(text,topN): 
 	seg_list = jieba.cut(text)
 	seg_list = filter(minLength, seg_list);
@@ -25,13 +31,22 @@ def applyParallel(text,topN):
 			seg_list.append(word)
 	print("Result: \n" + "\n".join(seg_list))
 	return calcWordFreq(seg_list, topN)
+
+def applyN(text,topN): 
+	seg_list = []
+	words = pseg.cut(text)
+	for word, flag in words:
+		# print word,flag
+		if flag=="n":
+			seg_list.append(word)
+	# print("Result: \n" + "\n".join(seg_list))
+	return calcWordFreq(seg_list, topN)
+
 def minLength(x): return len(x) >= 2
 
 
 def calcWordFreq(wordList, topN):
 
-	blacklist_file = open("blacklist.txt",'r')
-	blacklist = re.split('[\s\ \\,\;\.\!\n]+', blacklist_file.read())
 
 	# print "黑名单", blacklist
 	wordFreq = {}
