@@ -24,3 +24,19 @@ Meteor.isServer && Meteor.publishTransformed('messages:channels:name', function 
     }
   })
 })
+
+Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', function (ids) {
+  return Messages.find({
+    $or: [
+      { $and: [{ userId: ids[1] }, { to: ids[1] }] },
+      { $and: [{ userId: ids[0] }, { to: ids[0] }]}
+    ]}, {
+    sort: {
+      createdAt: -1
+    }
+  }).serverTransform({
+    user(message) {
+      return Users.findOne(message.userId)
+    }
+  })
+})

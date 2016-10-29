@@ -4,6 +4,7 @@ const index = () => <div>
     <input type='password' name='password' defaultValue='demo' />
     <input type='submit' value='login' />
   </form>
+  <a href='/register'>注册</a>
 </div>
 
 function submit(e) {

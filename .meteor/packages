@@ -45,3 +45,4 @@ jcbernack:reactive-aggregate
 stylus@2.513.6
 crapthings:meteor-data-container
 fortawesome:fontawesome
+meteorhacks:picker
