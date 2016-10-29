@@ -1,7 +1,8 @@
-import Nav from './nav'
-
  const layout = ({ content }) => <div>
-  <Nav />
+  <nav>
+    <a href="/">posts</a>
+    <a href="/todos">todos</a>
+  </nav>
   {content()}
 </div>
 
