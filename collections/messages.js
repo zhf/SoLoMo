@@ -40,3 +40,16 @@ Meteor.isServer && Meteor.publishTransformed('messages:users:conversation', func
     }
   })
 })
+
+Meteor.isServer && Meteor.publishTransformed('messages:my', function () {
+  return Messages.find({
+    $or: [{ userId: this.userId }, { to: this.userId }]}, {
+    sort: {
+      createdAt: -1
+    }
+  }).serverTransform({
+    user(message) {
+      return Users.findOne(message.userId)
+    }
+  })
+})

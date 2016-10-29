@@ -1,13 +1,27 @@
+const subscriptions = {
+  'messages:my': []
+}
+
 const data = {
   messages() {
-    return Messages.find().fetch()
+    const messages = Messages.find({}, {
+      sort: {
+        createdAt: -1
+      }
+    }).fetch()
+
+    return _.uniqBy(messages, 'channel')
   }
 }
 
-const index = () => <MeteorDataContainer sources={{ data, }} component={({ messages }) => <div>
-  {messages.map(({ _id, ...message }) => <p key={_id}>
-    {message.text}
-  </p>)}
+const index = () => <MeteorDataContainer sources={{ subscriptions, data, }} component={({ messages }) => <div className='flex flex-column'>
+  {messages.map(({ ...message }) => <div key={message._id} className='flex flex-center-y pdlr ui-list ui-pointer' onClick={() => whichView(message)}>
+    [{message.channel}]： {message.text}
+  </div>)}
 </div>} />
+
+function whichView(message) {
+  return message.channel ? FlowRouter.go(`/channels/${message.channel}`) : FlowRouter.go(`/users/${message.to}/messages`)
+}
 
 export default index
